@@ -74,7 +74,14 @@
         background-color: white;
     }
     
+/*Desktop Dimensions- make width of inputs w-50*/
 
+@media (min-width: 992px) {
+.col-md-7 {
+    margin-left: 50px;
+}
+
+}
 
 
 
@@ -123,23 +130,24 @@
         <div class="contentovertimage">
           
                 <div class="row">
-                    <div class="col-7 ">
+                  
+                    <div class="col-md-7 col-12 ">
                         <div class="toptext display-2 text-white">Feel free to contact us in any way you see fit. </div>
                        <div class="contactform mt-3">
                         <form onsubmit="addUser(event)">
                             <div>
                                 <label for="Name" class="form-label text-white">Name</label>
-                                <input type="text" class="form-control w-50" placeholder="Enter name here..." id="Name" required>
+                                <input type="text" class="form-control w-md-50 w-sm-100" placeholder="Enter name here..." id="Name" required>
                             </div>
                         
                             <div class="mb-3">
                                 <label for="Email" class="form-label text-white">Email address</label>
-                                <input type="email" class="form-control w-50" placeholder="Enter email here..." id="Email" required>
+                                <input type="email" class="form-control w-md-50 w-sm-100" placeholder="Enter email here..." id="Email" required>
                             </div>
                         
                             <div class="mb-3">
                                 <label for="Message" class="form-label text-white">Message</label>
-                                <textarea required class="form-control message w-50" placeholder="Enter your message here..." id="Message" rows="5"></textarea>
+                                <textarea required class="form-control w-md-50 w-sm-100" placeholder="Enter your message here..." id="Message" rows="5"></textarea>
                             </div>
                         
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -147,7 +155,7 @@
                         
                        </div>
                     </div>
-                    <div class="col-4 mt-2">
+                    <div class="col-md-4 col-12 mt-2">
                         <div class="topcard card" >
 
                             <div class="card-body">

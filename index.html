@@ -9,8 +9,22 @@
     
 </head>
 <style>
+    /* Global styles */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
     .nav-brand {
-        font-size: 20px; 
+        font-size: 22px; 
         font-weight: bold;
     
         font-family: "Arial";
@@ -69,6 +83,78 @@
     
 
 
+
+    /* Small screens (mobile) */
+
+    @media (max-width: 768px) {
+        .nav-brand {
+            font-size: 18px;
+        }
+
+        .nav-item {
+            margin-top: 15px;
+        }
+
+        .toptext {
+            margin-top: 50px;
+        }
+
+        .col-7 {
+            margin-left: 20px;
+        }
+
+        .topcard {
+            margin-top: 50px;
+        }
+    }
+
+    /* Medium screens (tablet) */
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .nav-brand {
+            font-size: 20px;
+        }
+
+        .nav-item {
+            margin-top: 20px;
+        }
+
+        .toptext {
+            margin-top: 70px;
+        }
+
+        .col-7 {
+            margin-left: 30px;
+        }
+
+        .topcard {
+            margin-top: 70px;
+        }
+    }
+
+    /* Large screens (desktop) */
+
+    @media (min-width: 1025px) {
+        .nav-brand {
+            font-size: 22px;
+        }
+
+        .nav-item {
+            margin-top: 25px;
+        }
+
+        .toptext {
+            margin-top: 110px;
+        }
+
+        .col-7 {
+            margin-left: 50px;
+        }
+
+        .topcard {
+            margin-top: 110px;
+        }
+    }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
@@ -111,7 +197,7 @@
         <div class="contentovertimage">
           
                 <div class="row">
-                    <div class="col-7 ">
+                    <div class="col-md-7 col-7 ">
                         <div class="toptext display-2 text-white">Welcome, to Stars and Stripes Learning Center. </div>
                         <div class="display-6 text-white">early child development starts here</div>
 
@@ -119,7 +205,7 @@
                             <a href="https://www.facebook.com/StarsandStripesLearningCenter/" target="_blank"><img class="dimensions" src="facebook png.jpg" alt=""></a></div>
 
                     </div>
-                    <div class="col-4 ">
+                    <div class="col-md-4 col-12 ">
                         <div class="topcard card" >
 
                             <div class="card-body">
